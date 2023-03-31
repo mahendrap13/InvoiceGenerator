@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ---------------------  main input form------------------- */
+
+.inputDetails {
+  min-height: 85vh;
+  width: 60%;
+  padding: 20px 100px;
+  margin: 30px auto;
+  position: relative;
+  box-shadow: 0px 0px 40px #82b4f9 !important;
+}
+.inputDetails h1 {
+  text-align: center;
+  text-decoration: underline grey;
+}
+.inputDetails form input {
+  padding: 10px 5px;
+  width: 48%;
+  margin: 7px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: capitalize;
+  /* cursor: cell; */
+}
+.inputDetails form input:focus {
+  outline: 5px solid #c2dbfe;
+  border: 1px solid #82b4f9;
+}
+::placeholder {
+  color: #222;
+}
+.inputDetails form input:nth-child(3) {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputDetails h2 {
+  text-align: end;
+  padding: 20px;
+  color: grey;
+  font-size: 35px;
+}
+.inputDetails button {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgba(0, 140, 255, 0.842);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.inputDetails .Invoice {
+  /* background-color: red; */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.totle label {
+  border-top: none !important ;
+}
+.main-data .append {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-data .append #product {
+  text-align: center;
+  border: 1px solid #222;
+  border-right: none;
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+/* ========================.containers============================ */
+.containers {
+  width: 61%;
+  margin: 30px auto;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.containers.bill {
+  height: 600px;
+}
+.Previev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7f1ff;
+  padding: 20px 30px;
+  width: 61%;
+  margin: 50px auto 30px;
+}
+.Previev p {
+  color: black;
+  font-weight: 600;
+}
+.Previev img {
+  width: 20px;
+  rotate: -90deg;
+  transition: all 0.5s;
+}
+.Previev img.bill {
+  rotate: -270deg;
+}
+
+.containers .logo {
+  width: 20%;
+  display: grid;
+  place-items: center;
+}
+
+.containers .logo .img {
+  width: 100px;
+  height: 100px;
+}
+
+.containers .logo .img img {
+  width: 100%;
+}
+
+.containers .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  line-height: 27px;
+  border: 1px solid #222;
+}
+
+.containers .heading .shopName {
+  width: 80%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.containers .heading .shopName h1 {
+  font-size: 36px;
+  padding: 10px;
+}
+
+label {
+  font-weight: 600;
+  padding: 4px 0;
+}
+
+.containers .customerDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #222;
+  border-top: none;
+}
+
+.containers .customerDetails .box {
+  display: flex;
+  flex-direction: column;
+}
+
+.containers .customerDetails .box .li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.containers .customerDetails .box .li p {
+  text-transform: capitalize;
+}
+
+.containers .orders .order-lable {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.containers .orders .order-lable label {
+  text-align: center;
+  border: 1px solid #222;
+  border-right: none;
+  border-top: none;
+}
+
+.containers .orders .totle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.containers .orders .totle label {
+  text-align: center;
+  border: 1px solid #222;
+  border-right: none;
+}
+
+.containers .orders .grandTotle {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.containers .orders .grandTotle label {
+  text-align: center;
+  border: 1px solid #222;
+  border-right: none;
+  border-top: none;
+}
+
+.mainDetails .message {
+  border: 1px solid #222;
+  border-top: none;
+}
+
+.mainDetails .message > p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.mainDetails .msg {
+  align-items: end;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 30px 100px;
+}
+
+/* --------------------- product modal------------------- */
+
+.modal-dialog .modal-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.568) !important;
+  box-shadow: 0px 0px 30px #82b4f9 !important;
+  margin-top: 10px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-dialog .modal-content.mahi {
+  height: 410px;
+}
+
+.modal-dialog .modal-content .modal-body .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.modal-dialog .modal-content .modal-body .row div {
+  display: flex;
+  flex-direction: column;
+  width: 48% !important;
+  margin: 0 5px;
+}
+
+.modal-dialog .modal-content .modal-body div label {
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.modal-dialog .modal-content .modal-body div input {
+  width: 100%;
+  padding: 10px 5px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #222;
+}
+
+.modal-header h5 {
+  font-size: 20px;
+}
+
+.modal-header button {
+  padding: 4px 10px;
+  background-color: rgba(0, 0, 0, 0.658);
+  box-shadow: 0px 0px 10px black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-footer {
+  padding: 15px 30px;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.modal-footer button:nth-child(1) {
+  background-color: grey;
+}
+
+.modal-footer button {
+  margin-right: 10px;
+  padding: 4px 10px;
+  background-color: rgba(0, 140, 255, 0.842);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 580px) {
+.inputDetails{
+  width: 90%;
+  margin: 10px auto;
+  padding: 30px;
+}
+.inputDetails form input{
+  width: 100%;
+}
+.modal-dialog .modal-content {
+  top: 50%;
+  width: 90%;
+  margin: 0 auto;
+}
+.modal-dialog .modal-content.mahi {
+   height:  550px;
+
+}
+.modal-dialog .modal-content .modal-body .row div{
+  width: 100% !important;
+}
+.modal-dialog .modal-content .modal-body .row div input{
+  width: 100%;
+
+}
+.Previev{
+  width: 90%;
+}
+.containers{
+  width: 90%;
+  
+}
+  
+}
