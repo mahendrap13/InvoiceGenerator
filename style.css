@@ -343,6 +343,8 @@ label {
 }
 .Previev{
   width: 90%;
+    display: none;
+
 }
 .containers{
   width: 90%;
