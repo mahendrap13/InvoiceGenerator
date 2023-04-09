@@ -94,6 +94,13 @@ function addproduct() {
   let GrandTotal = document.getElementById("GrandTotal");
   GrandTotal.innerHTML =
     Number(TotalPrice.innerHTML) + Number(TotalTax.innerHTML);
+  
+  var inputs = document.getElementsByTagName("input");
+  for (var ko = 0; ko < inputs.length; ko++) {
+    inputs[ko].value = "";
+  }
+
+  modal.classList.remove("mahi");
 }
 
 function delateDiv(cut1) {
