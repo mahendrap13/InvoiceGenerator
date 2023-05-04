@@ -95,7 +95,7 @@ function addproduct() {
   GrandTotal.innerHTML =
     Number(TotalPrice.innerHTML) + Number(TotalTax.innerHTML);
   
-  var inputs = document.getElementsByTagName("input");
+  var inputs = document.getElementsByClassName("form-control");
   for (var ko = 0; ko < inputs.length; ko++) {
     inputs[ko].value = "";
   }
